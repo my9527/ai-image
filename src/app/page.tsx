@@ -45,7 +45,7 @@ export default function Home() {
 
   return (
     <div className="h-screen flex justify-center items-center px-[12px] flex-col gap-10">
-      <div className={`max-w-md mx-auto border-2 border-gray-200 border-dashed p-[12px] w-full text-center flex justify-center items-center after:flex after:items-center after:justify-center after:w-0 after:text-gray-400 ${!_file && "after:content-['No_File_Selected'] after:w-full"}`}>
+      <div className={`max-w-md mx-auto border-2 border-gray-200 border-dashed p-[12px] min-h-[220px] w-full text-center flex justify-center items-center after:flex after:items-center after:justify-center after:w-0 after:text-gray-400 ${!_file && "after:content-['No_File_Selected'] after:w-full"}`}>
           {
             _file && <Image src={_file} alt="image" width={220} height={220} className="object-contain" /> 
           }
