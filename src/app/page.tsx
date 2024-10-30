@@ -19,7 +19,7 @@ export default function Home() {
 
     const formData = new FormData();
     formData.append("file", _file);
-    fetch("http://localhost:3000/api/upload", {
+    fetch("https://ai-image-api-rho.vercel.app/api/upload", {
       method: "POST",
       body: formData
     }).then((res)=>console.log(res))
